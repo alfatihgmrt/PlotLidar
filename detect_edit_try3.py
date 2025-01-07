@@ -255,7 +255,7 @@ def run(
                             #ser.write(str(1).encode())
                             ser.write(f'{3}\n'.encode('utf-8'))
                             print("serial sent: 3 (detected)")
-                            ser.write(f'{x_err},{y_err}, {angle_x}\n'.encode('utf-8'))
+                            ser.write(f'{x_err},{y_err},{angle_x}\n'.encode('utf-8'))
                             print(f"serial sent: Xerr: {x_err}, Yerr: {y_err}, AngX: {angle_x}")
                             
                             time.sleep(0.2)
