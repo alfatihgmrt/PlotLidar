@@ -267,12 +267,12 @@ def run(
                     else:
                         try:
                             #ser.write(str(1).encode())
-                            ser.write(f'{1}\n'.encode('utf-8'))
+                            #ser.write(f'{1}\n'.encode('utf-8'))
                             print("serial sent: 1 (none)")
                             
                             time.sleep(0.2)
 
-                            ser.close()
+                            #ser.close()
 
                         except Exception as e:
                             print("Error:", str(e))
