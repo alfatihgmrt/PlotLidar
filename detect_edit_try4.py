@@ -252,8 +252,8 @@ def run(
                         print("Error: (%g, %g)\n" % (x_err, y_err))
                         
                         try:
-                            ser.write(f'{x_err},{y_err},{angle}\n'.encode('utf-8'))
-                            print(f"serial sent: Xerr: {x_err}, Yerr: {y_err}, AngX: {angle}")
+                            ser.write(f'{angle}\n'.encode('utf-8'))
+                            print(f"serial sent: AngX: {angle}")
                             
                             time.sleep(0.2)
 
@@ -266,8 +266,8 @@ def run(
                     else:
                         try:
                             #ser.write(str(1).encode())
-                            ser.write(f'{1}\n'.encode('utf-8'))
-                            print("serial sent: 1 (none)")
+                            ser.write(f'{0}\n'.encode('utf-8'))
+                            print("serial sent: 0 (none)")
                             
                             time.sleep(0.2)
 
