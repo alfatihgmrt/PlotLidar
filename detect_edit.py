@@ -253,7 +253,7 @@ def run(
                         
                         try:
                             #ser.write(str(1).encode())
-                            ser.write(f'{x_err},{y_err}\n'.encode('utf-8'))
+                            ser.write(f'<{x_err}, {y_err}>'.encode('utf-8'))
                             print(f"serial sent: Xerr: {x_err}, Yerr: {y_err}")
                             
                             time.sleep(0.2)
